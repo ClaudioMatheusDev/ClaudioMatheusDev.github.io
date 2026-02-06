@@ -121,7 +121,7 @@ work-session-tracker/
 
 ## Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT.
 
 ## Autor
 
@@ -130,4 +130,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 > Sinta-se livre para abrir issues com sugestões, dúvidas ou reportar bugs!
-# 🚀 Portfólio de Claudio Matheus

@@ -62,10 +62,10 @@ function AboutSection() {
 function ProjectsSection() {
   const projects = [
     {
-      title: 'Projeto 1',
-      description: 'Work',
-      link: '/docs/projetos/projeto1',
-      tags: ['React', 'TypeScript']
+      title: 'Work Session Tracker',
+      description: 'Aplicação para registrar sessões de trabalho',
+      link: '/docs/projetos/WorkSessionTracker',
+      tags: ['React', 'ASP.NET', 'SQL Server']
     }
   ];
 
