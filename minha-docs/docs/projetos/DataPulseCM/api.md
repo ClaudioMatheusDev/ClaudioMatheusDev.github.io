@@ -197,6 +197,4 @@ GET /api/jobs/filter?jobName=ETL_Vendas&status=Sucesso&startDate=2026-02-01&endD
 
 ## 📖 Próximos Tópicos
 
-- [Referência Completa](./reference) - Detalhes de cada endpoint
-- [Exemplos](./examples) - Exemplos práticos de uso
-- [Integração](./integration) - Como integrar com seus jobs
+Continue explorando a documentação para ver como integrar seus jobs ETL com a API.

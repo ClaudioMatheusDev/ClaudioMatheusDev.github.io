@@ -285,6 +285,7 @@ Em breve: Dockerfile e docker-compose para deployment simplificado.
 
 ## 📞 Precisa de Ajuda?
 
-- [Abra uma issue](https://github.com/ClaudioMatheusDev/DataPulseCM/issues)
-- [Consulte a FAQ](./faq)
-- [Veja exemplos práticos](./examples/basic-usage)
+Se encontrar problemas durante a instalação:
+- Verifique os logs da API e do frontend
+- Confirme que todas as dependências foram instaladas
+- Teste a conexão com o banco de dados separadamente

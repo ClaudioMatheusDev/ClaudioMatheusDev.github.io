@@ -65,10 +65,10 @@ Para atender requisitos de auditoria, o sistema fornece:
 
 Explore a documentação completa:
 
-1. **[Instalação](./instalacao)** - Guia passo a passo de instalação
-2. **[Arquitetura](./arquitetura)** - Entenda a estrutura do projeto
-3. **[API Reference](./api)** - Documentação completa da API
-4. **[Exemplos](./exemplos)** - Exemplos práticos de uso
+1. **Instalação** - Guia passo a passo de instalação
+2. **Arquitetura** - Entenda a estrutura do projeto
+3. **API Reference** - Documentação completa da API
+4. **Exemplos** - Exemplos práticos de uso
 
 ## 🤝 Contribuindo
 

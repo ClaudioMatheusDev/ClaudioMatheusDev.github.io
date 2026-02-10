@@ -521,6 +521,4 @@ await client.FinalizarJob(jobId, "Sucesso");
 
 ## 📚 Próximos Passos
 
-- [Best Practices](./best-practices)
-- [Integração Avançada](./integration)
-- [Troubleshooting](../troubleshooting)
+Continue explorando a documentação para aprender mais sobre o DataPulseCM.

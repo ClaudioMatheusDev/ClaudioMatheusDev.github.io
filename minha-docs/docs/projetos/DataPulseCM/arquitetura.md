@@ -403,5 +403,5 @@ public void CreateExecution_ValidData_ReturnsExecution()
 
 ## 📚 Próximos Passos
 
-- [**API Reference**](./api) - Explore todos os endpoints
-- [**Exemplos**](./exemplos) - Veja o sistema em ação
+- **API Reference** - Explore todos os endpoints
+- **Exemplos** - Veja o sistema em ação
