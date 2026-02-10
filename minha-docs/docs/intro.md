@@ -33,8 +33,3 @@ Este site foi criado com [Docusaurus](https://docusaurus.io/), uma ferramenta mo
 Se você quiser entrar em contato ou colaborar em algum projeto, sinta-se à vontade para me enviar uma mensagem!
 
 ---
-
-:::tip Dica
-Use `Ctrl+K` (ou `Cmd+K` no Mac) para abrir a busca rápida!
-:::
-

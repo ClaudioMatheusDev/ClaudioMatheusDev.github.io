@@ -40,10 +40,24 @@ jobs:
         working-directory: ./minha-docs
         run: npm run build
 
+      - name: Prepare deployment
+        run: |
+          # Cria diretório de deploy
+          New-Item -ItemType Directory -Force -Path ./deploy
+          
+          # Copia index.html, assets e outros arquivos da raiz
+          Copy-Item -Path ./index.html -Destination ./deploy/
+          Copy-Item -Path ./assets -Destination ./deploy/ -Recurse -Force
+          Copy-Item -Path ./LICENSE -Destination ./deploy/ -ErrorAction SilentlyContinue
+          Copy-Item -Path ./README.md -Destination ./deploy/ -ErrorAction SilentlyContinue
+          
+          # Copia o build do Docusaurus para /docs
+          Copy-Item -Path ./minha-docs/build/* -Destination ./deploy/docs/ -Recurse -Force
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./minha-docs/build
+          path: ./deploy
 
   deploy:
     environment:
