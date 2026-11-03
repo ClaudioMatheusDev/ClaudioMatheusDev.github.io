@@ -1,0 +1,29 @@
+dotnet:
+  label: .NET
+  permalink: /dotnet
+  description: Artigos sobre o ecossistema .NET
+
+aspnet-core:
+  label: ASP.NET Core
+  permalink: /aspnet-core
+  description: Artigos sobre ASP.NET Core
+
+ef-core:
+  label: EF Core
+  permalink: /ef-core
+  description: Artigos sobre Entity Framework Core
+
+api-design:
+  label: Design de APIs
+  permalink: /api-design
+  description: Decisões de design em APIs REST
+
+nuget:
+  label: NuGet
+  permalink: /nuget
+  description: Bibliotecas e pacotes NuGet
+
+auditoria:
+  label: Auditoria
+  permalink: /auditoria
+  description: Auditoria e rastreabilidade de dados

@@ -26,10 +26,12 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'throw',
     },
   },
+  themes: ['@docusaurus/theme-mermaid'],
 
   stylesheets: [
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap',
@@ -50,7 +52,25 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: `${GITHUB}/ClaudioMatheusDev.github.io/tree/main/minha-docs/`,
         },
-        blog: false,
+        blog: {
+          routeBasePath: 'blog',
+          blogTitle: 'Blog',
+          blogDescription: 'Artigos técnicos sobre .NET, APIs e arquitetura de backend.',
+          blogSidebarTitle: 'Artigos',
+          blogSidebarCount: 'ALL',
+          showReadingTime: true,
+          readingTime: ({content, defaultReadingTime}) =>
+            defaultReadingTime({content, locale: 'pt-BR'}),
+          feedOptions: {
+            type: ['rss', 'atom'],
+            title: 'Claudio Matheus · Blog',
+            description: 'Artigos técnicos sobre .NET, APIs e arquitetura de backend.',
+            copyright: `© ${new Date().getFullYear()} Claudio Matheus`,
+          },
+          onInlineTags: 'throw',
+          onInlineAuthors: 'throw',
+          onUntruncatedBlogPosts: 'throw',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -87,6 +107,7 @@ const config: Config = {
           position: 'left',
           label: 'Projetos',
         },
+        {to: '/blog/', label: 'Blog', position: 'left'},
         {
           href: PORTFOLIO,
           label: 'Portfólio',
@@ -107,9 +128,17 @@ const config: Config = {
           title: 'Documentação',
           items: [
             {label: 'Início', to: '/'},
-            {label: 'DataPulseCM', to: '/projetos/datapulsecm'},
-            {label: 'ECommerceCM', to: '/projetos/ecommercecm'},
-            {label: 'Work Session Tracker', to: '/projetos/work-session-tracker'},
+            {label: 'AuditLogCM', to: '/projetos/auditlogcm/'},
+            {label: 'CMPay', to: '/projetos/cmpay/'},
+            {label: 'DataPulseCM', to: '/projetos/datapulsecm/'},
+            {label: 'ECommerceCM', to: '/projetos/ecommercecm/'},
+          ],
+        },
+        {
+          title: 'Blog',
+          items: [
+            {label: 'Todos os artigos', to: '/blog/'},
+            {label: 'RSS', href: 'https://claudiomatheusdev.github.io/docs/blog/rss.xml'},
           ],
         },
         {
@@ -120,14 +149,11 @@ const config: Config = {
             {label: 'E-mail', href: 'mailto:claudiomatheus055@gmail.com'},
           ],
         },
-        {
-          title: 'Mais',
-          items: [
-            {label: 'Portfólio', href: PORTFOLIO},
-          ],
-        },
       ],
       copyright: `© ${new Date().getFullYear()} Claudio Matheus`,
+    },
+    mermaid: {
+      theme: {light: 'neutral', dark: 'dark'},
     },
     prism: {
       theme: prismThemes.github,

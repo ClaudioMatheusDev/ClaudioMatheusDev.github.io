@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Páginas do portfólio. As páginas da documentação e do blog estão em /docs/sitemap.xml (gerado pelo Docusaurus). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://claudiomatheusdev.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://claudiomatheusdev.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://claudiomatheusdev.github.io/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://claudiomatheusdev.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://claudiomatheusdev.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://claudiomatheusdev.github.io/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
