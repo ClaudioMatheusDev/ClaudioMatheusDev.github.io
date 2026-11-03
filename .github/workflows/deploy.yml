@@ -48,8 +48,8 @@ jobs:
         run: |
           mkdir -p ./deploy/docs
           # Portfólio (raiz do site)
-          cp ./index.html ./deploy/
-          cp -r ./assets ./deploy/
+          cp ./index.html ./404.html ./robots.txt ./sitemap.xml ./deploy/
+          cp -r ./assets ./en ./deploy/
           touch ./deploy/.nojekyll
           # Docusaurus em /docs
           cp -r ./minha-docs/build/. ./deploy/docs/

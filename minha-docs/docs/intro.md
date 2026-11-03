@@ -13,14 +13,23 @@ arquitetura, como rodar localmente e como usar a API.
 
 | Projeto | O que é | Stack |
 | --- | --- | --- |
+| [AuditLogCM](/projetos/auditlogcm/) | Biblioteca NuGet de auditoria automática para EF Core | .NET 9, EF Core 9 |
+| [CMPay](/projetos/cmpay/) | Gateway de pagamentos com idempotência e API Key | ASP.NET Core 9, EF Core, Serilog, xUnit |
 | [DataPulseCM](/projetos/datapulsecm/) | Monitoramento centralizado de jobs de ETL | ASP.NET Core 9, SQL Server |
 | [ECommerceCM](/projetos/ecommercecm/) | E-commerce em microsserviços | ASP.NET Core, RabbitMQ, IdentityServer, Docker |
 | [Work Session Tracker](/projetos/work-session-tracker/) | Registro e análise de sessões de trabalho | ASP.NET Core 8, React 19, SQL Server |
 
 ## Como navegar
 
-Use o menu lateral para abrir cada projeto. O DataPulseCM tem a documentação mais completa,
-com guia de instalação, arquitetura, referência da API e exemplos de integração.
+Use o menu lateral para abrir cada projeto. Cada um começa com uma introdução (objetivo, stack e
+como rodar) e, quando faz sentido, tem páginas de arquitetura e referência da API.
+
+## Artigos
+
+No [blog](/blog/) explico decisões técnicas em mais detalhe:
+
+- [Como implementei idempotência no CMPay](/blog/idempotencia-no-cmpay/)
+- [Auditoria automática com interceptor do EF Core](/blog/auditoria-automatica-ef-core-interceptor/)
 
 ## Outros projetos
 

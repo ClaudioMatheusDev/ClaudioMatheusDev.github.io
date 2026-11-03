@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada | Claudio Matheus</title>
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#0b1220">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="/" class="nav-brand" aria-label="Claudio Matheus, início">
+                <img src="/assets/img/logo.png" alt="" width="28" height="28">
+                <span>Claudio Matheus</span>
+            </a>
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="notfound">
+        <div class="container">
+            <p class="notfound-code">HTTP 404 · NotFoundException</p>
+            <h1>Página não encontrada</h1>
+            <p>O endereço pode ter mudado ou não existe mais. A documentação foi reorganizada recentemente; os links antigos de <code>/docs/docs/...</code> agora ficam em <code>/docs/projetos/...</code>.</p>
+            <p lang="en">Page not found. <a href="/en/">Go to the English version</a>.</p>
+            <div class="hero-cta">
+                <a href="/" class="btn btn-primary">Ir para o portfólio</a>
+                <a href="/docs/" class="btn btn-ghost">Documentação</a>
+                <a href="/docs/blog/" class="btn btn-ghost">Blog</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Claudio Matheus</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js" defer></script>
+</body>
+</html>

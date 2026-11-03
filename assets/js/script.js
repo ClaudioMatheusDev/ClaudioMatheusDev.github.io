@@ -26,16 +26,19 @@
     // Menu mobile
     var navToggle = document.getElementById('nav-toggle');
     var navLinks = document.getElementById('nav-links');
+    // Os rótulos vêm do HTML (data-label-open / data-label-close) para funcionar em qualquer idioma
+    var labelOpen = navToggle ? navToggle.getAttribute('data-label-open') || 'Menu' : '';
+    var labelClose = navToggle ? navToggle.getAttribute('data-label-close') || 'Menu' : '';
     function closeMenu() {
         navLinks.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.setAttribute('aria-label', 'Abrir menu');
+        navToggle.setAttribute('aria-label', labelOpen);
     }
     if (navToggle && navLinks) {
         navToggle.addEventListener('click', function () {
             var open = navLinks.classList.toggle('is-open');
             navToggle.setAttribute('aria-expanded', String(open));
-            navToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+            navToggle.setAttribute('aria-label', open ? labelClose : labelOpen);
         });
         navLinks.addEventListener('click', function (e) {
             if (e.target.closest('a')) closeMenu();
@@ -60,7 +63,7 @@
     onScroll();
 
     // Animação de entrada
-    var targets = document.querySelectorAll('.section-title, .project-card, .stack-group, .highlights li');
+    var targets = document.querySelectorAll('.section-title, .project-card, .stack-group, .highlights li, .article-card');
     if ('IntersectionObserver' in window) {
         var observer = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {

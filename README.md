@@ -10,11 +10,14 @@ Portfólio e documentação técnica dos meus projetos como desenvolvedor backen
 ```text
 .
 ├── index.html              Página do portfólio (HTML, CSS e JS sem framework)
+├── en/index.html           Versão em inglês
+├── 404.html                Página de erro (usada pelo GitHub Pages para todo o site)
+├── robots.txt, sitemap.xml SEO (o sitemap das docs é gerado em /docs/sitemap.xml)
 ├── assets/
 │   ├── css/styles.css      Estilos, com tema claro e escuro
 │   ├── js/script.js        Tema, menu mobile e animações
 │   └── img/                Favicon, logo e imagem de compartilhamento
-├── minha-docs/             Documentação em Docusaurus (servida em /docs/)
+├── minha-docs/             Documentação e blog em Docusaurus (servidos em /docs/ e /docs/blog/)
 └── .github/workflows/
     └── deploy.yml          Build e publicação no GitHub Pages
 ```
