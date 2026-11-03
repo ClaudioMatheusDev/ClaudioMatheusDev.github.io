@@ -1,8 +1,8 @@
 {
-  "label": "📊 DataPulseCM",
+  "label": "DataPulseCM",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Sistema completo de monitoramento centralizado para jobs de ETL (Extract, Transform, Load)."
+    "type": "doc",
+    "id": "projetos/DataPulseCM/index"
   }
 }

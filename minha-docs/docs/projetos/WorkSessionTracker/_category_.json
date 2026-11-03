@@ -1,8 +1,8 @@
 {
-  "label": "📊 WorkSessionTracker",
+  "label": "Work Session Tracker",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "O projeto tem como objetivo fornecer uma plataforma para o monitoramento e análise de sessões de trabalho, permitindo aos usuários acompanhar seu tempo gasto em diferentes tarefas e projetos, identificar padrões de produtividade e otimizar seu desempenho."
+    "type": "doc",
+    "id": "projetos/WorkSessionTracker/WorkSessionTracker"
   }
 }

@@ -1,4 +1,4 @@
-name: Deploy Docusaurus to GitHub Pages
+name: Deploy portfólio + docs
 
 on:
   push:
@@ -36,24 +36,23 @@ jobs:
         working-directory: ./minha-docs
         run: npm ci
 
-      - name: Build website
+      - name: Typecheck
+        working-directory: ./minha-docs
+        run: npm run typecheck
+
+      - name: Build docs
         working-directory: ./minha-docs
         run: npm run build
 
       - name: Prepare deployment
         run: |
-          # Cria diretório de deploy
-          mkdir -p ./deploy
-          
-          # Copia index.html, assets e outros arquivos da raiz
+          mkdir -p ./deploy/docs
+          # Portfólio (raiz do site)
           cp ./index.html ./deploy/
           cp -r ./assets ./deploy/
-          cp ./LICENSE ./deploy/ 2>/dev/null || true
-          cp ./README.md ./deploy/ 2>/dev/null || true
-          
-          # Copia o build do Docusaurus para /docs
-          mkdir -p ./deploy/docs
-          cp -r ./minha-docs/build/* ./deploy/docs/
+          touch ./deploy/.nojekyll
+          # Docusaurus em /docs
+          cp -r ./minha-docs/build/. ./deploy/docs/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

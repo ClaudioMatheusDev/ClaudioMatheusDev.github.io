@@ -1,5 +1,7 @@
 ---
+slug: /projetos/work-session-tracker
 sidebar_position: 1
+sidebar_label: Work Session Tracker
 title: Work Session Tracker
 description: Aplicação para registrar, acompanhar e analisar sessões de trabalho
 ---
@@ -7,6 +9,8 @@ description: Aplicação para registrar, acompanhar e analisar sessões de traba
 # Work Session Tracker
 
 Este projeto é um **Work Session Tracker**: uma aplicação para registrar, acompanhar e analisar sessões de trabalho. Ideal para quem busca melhorar a produtividade, monitorar hábitos de trabalho ou gerar relatórios de atividades.
+
+> **Código-fonte:** [github.com/ClaudioMatheusDev/work-session-tracker](https://github.com/ClaudioMatheusDev/work-session-tracker)
 
 ## Funcionalidades
 

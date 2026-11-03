@@ -1,5 +1,6 @@
 ---
-sidebar_position: 1
+slug: /projetos/datapulsecm/api
+sidebar_position: 4
 title: Visão Geral da API
 ---
 

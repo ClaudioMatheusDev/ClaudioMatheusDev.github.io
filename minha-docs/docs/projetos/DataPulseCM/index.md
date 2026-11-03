@@ -1,11 +1,16 @@
 ---
+slug: /projetos/datapulsecm
 sidebar_position: 1
-title: Introdução
+sidebar_label: Introdução
+title: DataPulseCM
+description: Sistema de monitoramento centralizado para jobs de ETL, com API REST em ASP.NET Core e SQL Server.
 ---
 
 # 📊 DataPulseCM - Sistema de Monitoramento ETL
 
 Bem-vindo ao **DataPulseCM**, um sistema completo de monitoramento centralizado para jobs de ETL (Extract, Transform, Load).
+
+> **Código-fonte:** [github.com/ClaudioMatheusDev/DataPulseCM](https://github.com/ClaudioMatheusDev/DataPulseCM)
 
 ## 🎯 O que é o DataPulseCM?
 

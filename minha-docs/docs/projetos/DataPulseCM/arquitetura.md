@@ -1,4 +1,5 @@
 ---
+slug: /projetos/datapulsecm/arquitetura
 sidebar_position: 3
 title: Arquitetura
 ---
