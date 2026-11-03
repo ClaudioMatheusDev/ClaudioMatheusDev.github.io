@@ -1,12 +1,15 @@
 ---
+slug: /projetos/ecommercecm
 title: E-commerce Microservices com ASP.NET
-sidebar_label: EcommerceCM
-description: Projeto de E-commerce em ASP.NET Core com arquitetura de microservices, IdentityServer, JWT, Docker e RabbitMQ.
+sidebar_label: ECommerceCM
+description: Projeto de E-commerce em ASP.NET Core com arquitetura de microsserviços, IdentityServer, JWT, Docker e RabbitMQ.
 ---
 
 # E-commerce Microservices com ASP.NET
 
-Este repositório contém um projeto de E-commerce desenvolvido em ASP.NET Core, utilizando uma arquitetura baseada em microservices. O projeto implementa autenticação segura com IdentityServer e JWT, e segue boas práticas como DTOs, migrations, e comunicação entre serviços.
+O ECommerceCM é um e-commerce desenvolvido em ASP.NET Core com arquitetura de microsserviços. Ele implementa autenticação com IdentityServer e JWT e segue boas práticas como DTOs, migrations e comunicação assíncrona entre serviços.
+
+> **Código-fonte:** [github.com/ClaudioMatheusDev/ECommerceCM](https://github.com/ClaudioMatheusDev/ECommerceCM)
 
 ## Tecnologias Utilizadas
 

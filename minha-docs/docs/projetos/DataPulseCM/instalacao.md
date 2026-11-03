@@ -1,4 +1,5 @@
 ---
+slug: /projetos/datapulsecm/instalacao
 sidebar_position: 2
 title: Instalação
 ---

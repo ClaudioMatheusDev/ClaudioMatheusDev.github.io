@@ -1,5 +1,6 @@
 ---
-sidebar_position: 3
+slug: /projetos/datapulsecm/exemplos
+sidebar_position: 5
 title: Exemplos Práticos
 ---
 

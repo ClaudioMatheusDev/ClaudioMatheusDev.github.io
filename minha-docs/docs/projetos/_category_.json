@@ -1,8 +1,5 @@
 {
-  "label": "Meus Projetos",
+  "label": "Projetos",
   "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Documentação completa de todos os meus projetos."
-  }
+  "collapsible": false
 }

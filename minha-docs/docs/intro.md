@@ -1,37 +1,28 @@
 ---
+slug: /
 sidebar_position: 1
+sidebar_label: Início
+title: Documentação técnica
+description: Documentação dos projetos backend de Claudio Matheus, com arquitetura, instalação, API e exemplos.
 ---
 
-# Bem-vindo ao Meu Portfólio 👋
+Esta é a documentação dos meus projetos. Cada página explica o objetivo do sistema, as decisões de
+arquitetura, como rodar localmente e como usar a API.
 
-Esta e a base da minha documentacao tecnica. Aqui voce encontra projetos reais, escolhas de arquitetura e guias de uso focados em backend, APIs e microservicos.
+## Projetos documentados
 
-## ⚙️ Foco e abordagem
+| Projeto | O que é | Stack |
+| --- | --- | --- |
+| [DataPulseCM](/projetos/datapulsecm/) | Monitoramento centralizado de jobs de ETL | ASP.NET Core 9, SQL Server |
+| [ECommerceCM](/projetos/ecommercecm/) | E-commerce em microsserviços | ASP.NET Core, RabbitMQ, IdentityServer, Docker |
+| [Work Session Tracker](/projetos/work-session-tracker/) | Registro e análise de sessões de trabalho | ASP.NET Core 8, React 19, SQL Server |
 
-Eu desenvolvo solucoes robustas, com codigo limpo e evolutivo. Meu foco principal inclui:
+## Como navegar
 
-- APIs RESTful e microservicos
-- Performance, seguranca e escalabilidade
-- Boas praticas de arquitetura e integracao
+Use o menu lateral para abrir cada projeto. O DataPulseCM tem a documentação mais completa,
+com guia de instalação, arquitetura, referência da API e exemplos de integração.
 
-## 🧭 Como navegar
+## Outros projetos
 
-Use o menu lateral para explorar:
-
-- **Projetos**: documentacao completa de cada sistema
-- **Blog**: artigos e posts sobre desenvolvimento
-
-## 📌 O que voce vai encontrar
-
-Cada projeto tem sua propria pagina com:
-
-- Descricao e objetivo do sistema
-- Tecnologias utilizadas
-- Passos de instalacao e execucao
-- Links para repositorios e demos
-
-## 📬 Contato
-
-Quer colaborar ou tirar duvidas? Fique a vontade para entrar em contato pelos canais do site.
-
----
+Os demais projetos estão no [portfólio](https://claudiomatheusdev.github.io/#projetos) e no
+[GitHub](https://github.com/ClaudioMatheusDev?tab=repositories).

@@ -2,36 +2,39 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// Executa em Node.js — não use APIs de navegador aqui.
+
+const GITHUB = 'https://github.com/ClaudioMatheusDev';
+const LINKEDIN = 'https://www.linkedin.com/in/claudio-matheus-814420278/';
+const PORTFOLIO = 'https://claudiomatheusdev.github.io/';
 
 const config: Config = {
-  title: 'Meu Portfólio',
-  tagline: 'Desenvolvedor | Projetos & Documentações',
-  favicon: 'img/FavIconCM.png',
+  title: 'Claudio Matheus · Docs',
+  tagline: 'Documentação técnica dos meus projetos backend .NET',
+  favicon: 'img/favicon.png',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
+  // Publicado em https://claudiomatheusdev.github.io/docs/ junto com o portfólio
   url: 'https://claudiomatheusdev.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'claudiomatheusdev', // Usually your GitHub org/user name.
-  projectName: 'ClaudioMatheusDev.github.io', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
-  trailingSlash: false,
+  organizationName: 'ClaudioMatheusDev',
+  projectName: 'ClaudioMatheusDev.github.io',
+  trailingSlash: true,
 
   onBrokenLinks: 'throw',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap',
+  ],
+
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR'],
@@ -41,20 +44,13 @@ const config: Config = {
     [
       'classic',
       {
+        // Modo "somente docs": a documentação é a página inicial de /docs/
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
+          editUrl: `${GITHUB}/ClaudioMatheusDev.github.io/tree/main/minha-docs/`,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -63,27 +59,42 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.png',
+    metadata: [
+      {name: 'author', content: 'Claudio Matheus'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     navbar: {
-      title: 'Meu Portfólio',
+      title: 'Claudio Matheus',
       logo: {
-        alt: 'Logo',
-        src: 'img/logo.svg',
+        alt: 'Logo Claudio Matheus',
+        src: 'img/logo.png',
+        href: PORTFOLIO,
+        target: '_self',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Projetos',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/ClaudioMatheusDev/MatheusDev',
+          href: PORTFOLIO,
+          label: 'Portfólio',
+          position: 'left',
+          target: '_self',
+        },
+        {
+          href: GITHUB,
           label: 'GitHub',
           position: 'right',
         },
@@ -93,50 +104,35 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Navegação',
+          title: 'Documentação',
           items: [
-            {
-              label: 'Início',
-              to: '/',
-            },
-            {
-              label: 'Projetos',
-              to: 'docs/intro',
-            },
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
+            {label: 'Início', to: '/'},
+            {label: 'DataPulseCM', to: '/projetos/datapulsecm'},
+            {label: 'ECommerceCM', to: '/projetos/ecommercecm'},
+            {label: 'Work Session Tracker', to: '/projetos/work-session-tracker'},
           ],
         },
         {
-          title: 'Social',
+          title: 'Contato',
           items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/ClaudioMatheusDev/MatheusDev',
-            },
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/ClaudioMatheusDev',
-            },
+            {label: 'GitHub', href: GITHUB},
+            {label: 'LinkedIn', href: LINKEDIN},
+            {label: 'E-mail', href: 'mailto:claudiomatheus055@gmail.com'},
           ],
         },
         {
           title: 'Mais',
           items: [
-            {
-              label: 'Email',
-              href: 'mailto:claudiomatheus055@gmail.com',
-            },
+            {label: 'Portfólio', href: PORTFOLIO},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Meu Portfólio. Feito com ❤️ usando Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Claudio Matheus`,
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      darkTheme: prismThemes.vsDark,
+      additionalLanguages: ['csharp', 'bash', 'powershell', 'json', 'sql', 'python'],
     },
   } satisfies Preset.ThemeConfig,
 };

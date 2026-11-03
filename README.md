@@ -1,27 +1,48 @@
-# 🚀 Portfólio de Claudio Matheus
+# Portfólio · Claudio Matheus
 
-Bem-vindo ao meu portfólio profissional! Este repositório contém minha página de apresentação e documentação de projetos.
+Portfólio e documentação técnica dos meus projetos como desenvolvedor backend .NET.
 
-## 🌐 Links
+- **Portfólio:** <https://claudiomatheusdev.github.io/>
+- **Documentação:** <https://claudiomatheusdev.github.io/docs/>
 
-- **Portfólio**: [https://claudiomatheusdev.github.io/](https://claudiomatheusdev.github.io/)
-- **Documentação**: [https://claudiomatheusdev.github.io/minha-docs/](https://claudiomatheusdev.github.io/minha-docs/)
+## Estrutura
 
-### Documentação
-- [Docusaurus](https://docusaurus.io/) - Framework de documentação
-- React + TypeScript
-- Markdown para conteúdo
+```text
+.
+├── index.html              Página do portfólio (HTML, CSS e JS sem framework)
+├── assets/
+│   ├── css/styles.css      Estilos, com tema claro e escuro
+│   ├── js/script.js        Tema, menu mobile e animações
+│   └── img/                Favicon, logo e imagem de compartilhamento
+├── minha-docs/             Documentação em Docusaurus (servida em /docs/)
+└── .github/workflows/
+    └── deploy.yml          Build e publicação no GitHub Pages
+```
 
-## 📦 Deploy
+## Rodar localmente
 
-Este site é automaticamente publicado via GitHub Pages.
+Portfólio (qualquer servidor estático):
 
-## 📫 Contato
+```bash
+python -m http.server 8080
+```
 
-- **GitHub**: [@ClaudioMatheusDev](https://github.com/ClaudioMatheusDev)
-- **LinkedIn**: [ClaudioMatheusDev](https://www.linkedin.com/in/claudio-matheus-814420278/)
-- **Email**: claudiomatheus055@gmail.com
+Documentação:
 
----
+```bash
+cd minha-docs
+npm ci
+npm start
+```
 
-⭐ **Desenvolvido com ❤️ por Claudio Matheus**
+## Deploy
+
+A cada push na `main`, o workflow [deploy.yml](.github/workflows/deploy.yml) compila o Docusaurus,
+junta o build com o portfólio (docs em `/docs/`) e publica no GitHub Pages.
+Em pull requests ele só compila, para validar links e tipos.
+
+## Contato
+
+- GitHub: [@ClaudioMatheusDev](https://github.com/ClaudioMatheusDev)
+- LinkedIn: [Claudio Matheus](https://www.linkedin.com/in/claudio-matheus-814420278/)
+- E-mail: claudiomatheus055@gmail.com
